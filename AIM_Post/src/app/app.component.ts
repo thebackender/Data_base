@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
     this.companyService.login(this.username, this.password).subscribe((data) => {
       localStorage.setItem('token', data.token);
       this.logged = true;
-      this.username = '';
+      //this.username = '';
       this.password = '';
     });
   }
