@@ -2,7 +2,7 @@
   background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2545.jpg");
   height: 100%; 
   width: 100%;
-  position: fixed;
+  /* position: fixed; */
 
   /* Center and scale the image nicely */
   background-position: center;
