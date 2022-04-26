@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+div{
+    background-color: aliceblue;
+    border-color: white;
+    border-radius: 10px;
+    border-style: solid;
+    font: 15px Arial, sans-serif;
+    color: black;
+    
+}

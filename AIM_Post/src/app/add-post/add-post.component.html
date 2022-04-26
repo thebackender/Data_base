@@ -1,1 +1,9 @@
-<p>add-post works!</p>
+<p>Hello, {{ username }} !!! Here you can post your posts!</p>
+<br>
+<p>Title: <input type="text" [(ngModel)]="title"></p>
+<br>
+<p>Text: <br><textarea [(ngModel)]="text" rows="20" cols = "100"></textarea></p>
+<br>
+<p>Image source: <input type="text" [(ngModel)]="url" #message="ngModel"></p>
+<br>
+<button (click) = "this.addPost()">Save</button>

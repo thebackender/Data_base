@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PostService } from '../post.service'
+import { Post } from '../models';
 
 @Component({
   selector: 'app-post-approval',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostApprovalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: PostService) { }
 
   ngOnInit(): void {
   }

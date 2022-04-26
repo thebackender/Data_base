@@ -20,6 +20,14 @@ export class PostService {
   }
 
   getPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>(`${this.BASE_URL}/api/companies/`);
+    return this.http.get<Post[]>(`${this.BASE_URL}/api/posts/`);
+  }
+
+  getPost(id: number): Observable<Post> {
+    return this.http.get<Post>(`${this.BASE_URL}/api/posts/${id}/`);
+  }
+
+  addPost(post: Post): Observable<Post> { 
+    return this.http.post<Post>(`${this.BASE_URL}/api/posts/`, post);
   }
 }

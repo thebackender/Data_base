@@ -1,12 +1,15 @@
-<div *ngIf="!logged">
-  <h1>Login Form</h1>
-  <p>Username: <input type="text" [(ngModel)]="username"></p>
-  <p>Password: <input type="text" [(ngModel)]="password"></p>
-  <button (click)="login()">Login</button>
-</div>
+<div id = "background">
+    <div *ngIf="!logged" id = "input">
+      <h1>Login Form</h1>
+      <p>Username: <input type="text" [(ngModel)]="username"></p>
+      <p>Password: <input type="text" [(ngModel)]="password"></p>
+      <button (click)="login()">Login</button>
+    </div>
 
-<div *ngIf="logged">
-  <router-outlet></router-outlet>
-  <button (click)="logout()">Logout</button>
-  {{username}}
+    <div *ngIf="logged">
+      <button (click)="goBack()">Back</button>
+      <router-outlet></router-outlet>
+      <button (click)="logout()">Logout</button>
+      {{username}}
+    </div>
 </div>
