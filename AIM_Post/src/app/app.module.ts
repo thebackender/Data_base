@@ -9,6 +9,7 @@ import { PostListComponent } from './post-list/post-list.component';
 import { AddPostComponent } from './add-post/add-post.component';
 import { PostApprovalComponent } from './post-approval/post-approval.component';
 import { PostDetailComponent } from './post-detail/post-detail.component';
+import { AddCommentComponent } from './add-comment/add-comment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
     PostListComponent,
     AddPostComponent,
     PostApprovalComponent,
-    PostDetailComponent
+    PostDetailComponent,
+    AddCommentComponent
   ],
   imports: [
     BrowserModule,
