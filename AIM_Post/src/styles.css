@@ -1,10 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
-div{
-    background-color: aliceblue;
-    border-color: white;
-    border-radius: 10px;
-    border-style: solid;
-    font: 15px Arial, sans-serif;
-    color: black;
-    
+*{
+    padding: 0;
+    margin: 0;
+    font: 20px Arial;
+}
+body{
+  padding: 10px;
+
+  background-color:rgb(127, 178, 255);
+  color: aliceblue;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+input, textarea{
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+button{
+    padding: 5px !important;
+    font-size: 15px;
+}
+img{
+    width: 320px;
+    height: 180px;
+    background-color: #0d6efd;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 5px;
+}
+.jumbotron{
+    background: transparent;
+    color: #333;
 }

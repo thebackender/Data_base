@@ -52,7 +52,7 @@ class FeedbackSerializer(serializers.ModelSerializer):
 
 class PostSerializer(serializers.ModelSerializer):
     comments = CommentSerializer(many=True, read_only=True)
-    feedbacks = FeedbackSerializer(read_only=True)
+    feedbacks = FeedbackSerializer(many=True, read_only=True)
 
     class Meta:
         model = Post

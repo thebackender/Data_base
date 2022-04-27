@@ -1,15 +1,23 @@
-<div id = "background">
-    <div *ngIf="!logged" id = "input">
-      <h1>Login Form</h1>
-      <p>Username: <input type="text" [(ngModel)]="username"></p>
-      <p>Password: <input type="text" [(ngModel)]="password"></p>
-      <button (click)="login()">Login</button>
+<div *ngIf="!logged" id = "input">
+  <div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+              <div class="form-group">
+                <h1>Login Form</h1>
+                <p>Username: <input type="text" [(ngModel)]="username"></p>
+                <p>Password: <input type="password" [(ngModel)]="password"></p>
+                <button (click)="login()" class="btn btn-primary"><i class="fa-solid fa-right-to-bracket"></i>Login</button>
+            </div>
+            </div>
+        </div>
     </div>
+  </div>
+</div>
 
-    <div *ngIf="logged">
-      <button (click)="goBack()">Back</button>
-      <router-outlet></router-outlet>
-      <button (click)="logout()">Logout</button>
-      <!-- {{username}} -->
-    </div>
+<div *ngIf="logged">
+  <button (click)="goBack()" class="btn btn-danger" style="margin-right: 10px;">Back</button>
+  <button (click)="logout()" class="btn btn-warning" style="margin-right: 10px;">Logout</button>
+  <router-outlet></router-outlet>
+  <!-- {{username}} -->
 </div>

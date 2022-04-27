@@ -2,3 +2,14 @@
     width: 20%;
     background-color: aqua; 
 }
+
+.post-detail {
+    width: 60%;
+    height: 40%;
+}
+.comment{
+    background: rgb(188, 246, 232);
+    border-radius: 5px;
+    padding: 5px;
+    color: #333;
+}

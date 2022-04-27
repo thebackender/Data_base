@@ -13,13 +13,14 @@ export class PostDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute,
               private service: PostService) { }
 
-  post: Post;
+  post!: Post;
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
       let id = +params['id'];
       this.service.getPost(id).subscribe(post =>{
         this.post = post;
+        console.log(this.post);
       })
     })
   }

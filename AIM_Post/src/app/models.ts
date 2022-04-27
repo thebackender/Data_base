@@ -5,6 +5,7 @@ export interface Post {
   text: string;
   url: string;
   comments: Comment[];
+  feedbacks: Feedback[]
 }
 
 export interface Feedback {

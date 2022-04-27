@@ -34,6 +34,7 @@ export class AddPostComponent implements OnInit {
       text: this.text,
       url: this.url,
       comments: [],
+      feedbacks: []
     }
     this.service.addPost(k).subscribe();
     this.goBack();

@@ -1,4 +1,6 @@
-<button [routerLink] = "['/add_post']">Add new post</button>
-<div class="post" *ngFor = "let post of posts" [routerLink] = "['/posts', post.id]">
-    <h1>{{ post.title }}</h1>
-</div>
+<button [routerLink] = "['/add_post']" class="btn btn-success">Add new post</button>
+<div class="post" *ngFor = "let post of posts; let i = index" [routerLink] = "['/posts', post.id]">
+    <p>{{i+1}}) {{ post.title }}</p>
+    <img [src]="post.url" alt="">
+    <hr>
+</div> 
